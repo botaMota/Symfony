@@ -1,9 +1,0 @@
-screenfony_demo:
-    resource: "@ScreenfonyDemoBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-users:
-    type:    rest
-    resource:  Screenfony\DemoBundle\Controller\UsersController
-
