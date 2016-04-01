@@ -23,12 +23,11 @@ namespace Screenfony\DemoBundle\Controller {
          * @param User $user
          *@return array
          *@View()
-         * @ParamConverter("user", class="ScreenfonyDemoBundle:User")
+         *@ParamConverter("user", class="ScreenfonyDemoBundle:User")
          */
         public function getUserAction(User $user)
         {
-            $users = $this -> getDoctrine()->getRepository('ScreenfonyDemoBundle:User')->findAll();
-            return array('users' => $user);
+            return array('user' => $user);
         }
     }
 }
